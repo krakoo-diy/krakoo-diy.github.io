@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Zakaria Latreche — ePortfolio</title>
-  <meta name="description" content="ePortfolio simple de Zakaria Latreche — Éducation, Projets, Compétences, Contact." />
-  <!-- garder les fichiers séparés -->
+  <meta name="description" content="ePortfolio minimaliste noir et blanc de Zakaria Latreche — Éducation, Projets, Compétences, Contact." />
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
 <body>
-  <!-- En‑tête minimal -->
+  <!-- En-tête -->
   <header>
     <div class="container">
       <nav>
@@ -17,7 +17,7 @@
           <img src="images/GnGC6gpWwAAuV8w.jpg" alt="Portrait">
           <div>
             <strong>Zakaria Latreche</strong><br>
-            <span class="muted">M2 Mécatronique avancée — Polytech Annecy‑Chambéry</span>
+            <span class="muted">M2 Mécatronique avancée — Polytech Annecy-Chambéry</span>
           </div>
         </div>
         <div class="navlinks">
@@ -32,12 +32,12 @@
   </header>
 
   <main class="container">
-    <!-- Hero très simple -->
+    <!-- Hero -->
     <section class="hero" id="accueil">
       <div>
         <span class="tag">Robotique • Embarqué • RF • PCB</span>
         <h1>ePortfolio</h1>
-        <p class="lead">Parcours et projets, en toute simplicité.</p>
+        <p class="lead">Parcours et projets — descriptions courtes, mots-clés clairs.</p>
         <div class="cta">
           <a class="btn primary" href="ZAKARIA%20LATRECHE.pdf" download>CV (PDF)</a>
           <a class="btn" href="#projets">Voir les projets</a>
@@ -45,90 +45,98 @@
       </div>
     </section>
 
-    <!-- Éducation : liste simple -->
+    <!-- Éducation -->
     <section id="education">
       <h2>Éducation</h2>
       <div class="card">
         <ul>
-          <li><strong>Master 2 Mécatronique avancée</strong> (en anglais) — Polytech Annecy‑Chambéry <em>• Sept. 2024 – Maintenant</em><br><span class="muted">Électronique & robotique, traitement d’image, contrôle des systèmes.</span></li>
-          <li><strong>Master 1 Capteurs intelligents & Micro‑Nano Technologies</strong> — Université de Lorraine <em>• Sept. 2023 – Juin 2024</em><br><span class="muted">Microélectronique, PCB, instrumentation programmable, RF.</span></li>
+          <li><strong>Master 2 Mécatronique avancée</strong> (en anglais) — Polytech Annecy-Chambéry <em>• Sept. 2024 – Present</em><br><span class="muted">Électronique & robotique, traitement d’image, contrôle des systèmes.</span></li>
+          <li><strong>Master 1 Capteurs intelligents & Micro-Nano Technologies</strong> — Université de Lorraine <em>• Sept. 2023 – Juin 2024</em><br><span class="muted">Microélectronique, PCB, instrumentation programmable, RF.</span></li>
           <li><strong>Master Instrumentation</strong> — Univ. de Constantine 1 <em>• Sept. 2021 – Juin 2023</em><br><span class="muted">Électronique numérique & analogique, conditionnement capteurs.</span></li>
           <li><strong>Licence Électronique</strong> — Univ. de Constantine 1 <em>• Sept. 2018 – Mai 2021</em><br><span class="muted">Circuits, amplificateurs, filtres passifs & actifs.</span></li>
         </ul>
       </div>
     </section>
 
-    <!-- Projets : cartes simples (une image + 4–5 lignes) -->
-    <section id="projets">
-      <h2>Projets</h2>
-      <div class="grid cards">
-        <!-- 1 -->
-        <article class="card project">
-          <img src="images/minimouse.png" alt="RoboCup">
-          <h3>International RoboCup Challenge</h3>
-          <p class="muted">Polytech Annecy‑Chambéry — Sept. 2024 – Mai 2025</p>
-          <p>ROS (C++/Python), SLAM LiDAR, planification, vision pour détection de balles.</p>
-        </article>
-        <!-- 2 -->
-        <article class="card project">
-          <img src="images/UR3.png" alt="UR3 ↔ ROS">
-          <h3>Interfaçage du robot UR3 avec ROS</h3>
-          <p class="muted">Mars 2025 – Avril 2025</p>
-          <p>Pilotes officiels, réseau, <code>.urcap</code>, calibration <code>.yaml</code>, contrôle RViz/MoveIt.</p>
-        </article>
-        <!-- 3 -->
-        <article class="card project">
-          <img src="images/Softwear_LIA.png" alt="Microscope multiphotonique">
-          <h3>Traitement du signal — microscope multiphotonique</h3>
-          <p class="muted">Fév. 2025 – Mai 2025</p>
-          <p>Interface Python, SDK PicoScope, acquisition temps réel, calcul SNR.</p>
-        </article>
-        <!-- 4 -->
-        <article class="card project">
-          <img src="images/meander_antenna.png" alt="Détection vibrations">
-          <h3>Système autonome de détection de vibrations</h3>
-          <p class="muted">Sept. 2024 – Jan. 2025</p>
-          <p>ESP32‑C3, IMU, antenne méandre 50 Ω, PCB 4 couches, BOM sous Altium.</p>
-        </article>
-        <!-- 5 -->
-        <article class="card project">
-          <img src="images/Circular_antenna.png" alt="RF SAW">
-          <h3>Liaison RF pour capteur SAW (milieu rotatif)</h3>
-          <p class="muted">Nov. 2023 – Mai 2024</p>
-          <p>COMSOL (S11/S12), ciblage 2,45 GHz, layout & adaptation d’impédance Altium.</p>
-        </article>
-        <!-- 6 -->
-        <article class="card project">
-          <img src="images/minimouse.png" alt="Mini‑robot">
-          <h3>Minirobot à deux roues (Mini‑Mouse)</h3>
-          <p class="muted">Jan. 2024 – Mai 2024</p>
-          <p>STM32 (C), SPI/UART/I²C, PCB 2 couches intégrant capteurs/actionneurs.</p>
-        </article>
-        <!-- 7 -->
-        <article class="card project">
-          <img src="images/heart_sensor.png" alt="Capteur cardiaque">
-          <h3>Capteur cardiaque analogique</h3>
-          <p class="muted">Déc. 2023 – Jan. 2024</p>
-          <p>LED IR + photodiode, filtre actif, ampli (×100), comparateur, ~90 BPM.</p>
-        </article>
-        <!-- 8 -->
-        <article class="card project">
-          <img src="images/recycling.png" alt="Tri bouteilles">
-          <h3>Système de tri pour collecteur de bouteilles</h3>
-          <p class="muted">Fév. 2023 – Juin 2023</p>
-          <p>Arduino (C/C++), détection/tri/comptage/broyage, IHM, intégration méca‑élec.</p>
-        </article>
-        <!-- 9 -->
-        <article class="card project">
-          <img src="images/solar_tracker.png" alt="Suiveur solaire">
-          <h3>Suiveur de soleil à deux axes</h3>
-          <p class="muted">Fév. 2021 – Mai 2021</p>
-          <p>ESP32, capteurs LDR, servos; optimisation d’orientation du panneau.</p>
-        </article>
-      </div>
-    </section>
+    <!-- Projets (1–2 lignes chacun) -->
+ <section id="projets">
+  <h2>Projets</h2>
+  <div class="grid cards">
+    <!-- RoboCup -->
+    <article class="card project">
+      <img src="images/minimouse.png" alt="RoboCup">
+      <h3>International RoboCup Challenge</h3>
+      <p>Robot foot sous ROS (C++/Python) : mécanisme de tir, SLAM LiDAR, planification de trajectoire, vision couleur temps réel.</p>
+    </article>
 
-    <!-- Compétences : liste simple -->
+    <!-- UR3 ↔ ROS -->
+    <article class="card project">
+      <img src="images/UR3.png" alt="UR3 ↔ ROS">
+      <h3>Interfaçage du robot UR3 avec ROS</h3>
+      <p>UR3↔ROS via Ethernet, pilotes officiels, .urcap + calibration .yaml ; contrôle cinématique sous RViz & MoveIt (tests temps réel, Linux).</p>
+    </article>
+
+    <!-- Microscope multiphotonique -->
+    <article class="card project">
+      <img src="images/Softwear_LIA.png" alt="Microscope multiphotonique">
+      <h3>Traitement du signal — microscope multiphotonique</h3>
+      <p>Acquisition temps réel (Python GUI + SDK PicoScope) et traitement ; calcul précis du SNR pour matériaux non linéaires.</p>
+    </article>
+
+    <!-- Détection vibrations -->
+    <article class="card project">
+      <img src="images/meander_antenna.png" alt="Détection de vibrations">
+      <h3>Système autonome de détection de vibrations</h3>
+      <p>Module IMU+MCU sur PCB 4 couches, antenne méandre IFA 50 Ω ; Wi-Fi/BLE et BOM optimisée (Altium).</p>
+    </article>
+
+    <!-- Liaison RF SAW -->
+    <article class="card project">
+      <img src="images/Circular_antenna.png" alt="Liaison RF SAW">
+      <h3>Liaison RF pour capteur SAW (milieu rotatif)</h3>
+      <p>Antenne circulaire 2,45 GHz : simulation COMSOL (S11/S12), optimisation paramétrique, layout & adaptation d’impédance (Altium).</p>
+    </article>
+
+    <!-- Mini-robot -->
+    <article class="card project">
+      <img src="images/minimouse.png" alt="Minirobot">
+      <h3>Minirobot à deux roues (Mini-Mouse)</h3>
+      <p>STM32 (C) avec SPI/UART/I²C ; PCB 2 couches intégrant capteurs/actionneurs pour déplacement autonome.</p>
+    </article>
+
+    <!-- Capteur cardiaque (avec 2 figures côte à côte) -->
+    <article class="card project">
+      <h3>Capteur cardiaque analogique</h3>
+      <p>Cardio-tachymètre (LED IR + photodiode, filtre actif, ampli, comparateur). Simulation LTspice et validation expérimentale (~90 BPM).</p>
+      <div class="figures">
+        <figure>
+          <img src="images/mini_schematic.png" alt="Schéma LTspice">
+          <figcaption>Schéma simulé (LTspice)</figcaption>
+        </figure>
+        <figure>
+          <img src="images/mini_project2.jpg" alt="Signal oscilloscope">
+          <figcaption>Signal mesuré (~90 BPM)</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- Tri bouteilles -->
+    <article class="card project">
+      <img src="images/recycling.png" alt="Système de tri de bouteilles">
+      <h3>Système de tri pour collecteur de bouteilles</h3>
+      <p>Arduino (C/C++) : détection, tri, comptage, broyage ; IHM et intégration mécatronique.</p>
+    </article>
+
+    <!-- Suiveur solaire -->
+    <article class="card project">
+      <img src="images/solar_tracker.png" alt="Suiveur solaire 2 axes">
+      <h3>Suiveur de soleil à deux axes</h3>
+      <p>ESP32, capteurs LDR, servomoteurs ; optimisation d’orientation pour meilleur rendement.</p>
+    </article>
+  </div>
+</section>
+
+    <!-- Compétences -->
     <section id="competences">
       <h2>Compétences</h2>
       <div class="card">
@@ -142,7 +150,7 @@
       </div>
     </section>
 
-    <!-- Langues & Certifs : liste simple -->
+    <!-- Langues & Certifs -->
     <section id="infos">
       <h2>Langues & Certifications</h2>
       <div class="grid">
@@ -175,10 +183,13 @@
 
   <!-- Pied de page -->
   <footer>
-    <div class="container">© <span id="y"></span> Zakaria Latreche — ePortfolio</div>
+    © <span id="y"></span> Zakaria Latreche — ePortfolio
   </footer>
 
-  <!-- JS minimal (peut être vide) -->
   <script src="js/script.js"></script>
+  <script>
+    // année auto si script.js est vide
+    (function(){ var y=document.getElementById('y'); if(y) y.textContent=new Date().getFullYear();})();
+  </script>
 </body>
 </html>

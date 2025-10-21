@@ -1,56 +1,247 @@
-/* style.css — thème 100% noir & blanc, minimal */
-/* Reset & base */
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%}
-body{background:#fff;color:#000;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;line-height:1.6}
-img{max-width:100%;display:block}
-a{color:#000;text-decoration:underline}
-.container{max-width:1100px;margin:0 auto;padding:20px}
+/* style.css — corrected layout for aligned project cards */
 
-/* Header & nav */
-header{background:#000;color:#fff}
-header .container{display:flex;justify-content:space-between;align-items:center}
-.brand{display:flex;align-items:center;gap:10px}
-.brand img{width:50px;height:50px;border-radius:50%;object-fit:cover;border:1px solid #fff}
-.navlinks{display:flex;gap:12px}
-.navlinks a{color:#fff;text-decoration:none;border-bottom:1px solid transparent}
-.navlinks a:hover{border-bottom-color:#fff}
+/* Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #111;
+  line-height: 1.7;
+  font-size: 16px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  color: #111;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+.navlinks a {
+  color: #fff;
+  margin-left: 16px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+.navlinks a:hover {
+  opacity: 0.7;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 0 40px;
+}
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.hero .lead {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.btn:hover {
+  background: #222;
+}
 
 /* Sections */
-section{padding:24px 0}
-h1{font-size:32px;margin:8px 0}
-h2{font-size:22px;margin:6px 0 12px}
-h3{font-size:18px;margin:8px 0}
-.lead{margin-top:6px}
-.tag{display:inline-block;border:1px solid #000;padding:4px 8px;border-radius:999px;font-size:12px}
+section {
+  padding: 40px 0;
+  border-bottom: 1px solid #ddd;
+}
+section:last-of-type {
+  border-bottom: none;
+}
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-left: 4px solid #000;
+  padding-left: 10px;
+}
 
-/* Simple layout */
-.hero{display:grid;grid-template-columns:1fr;gap:16px}
-.grid{display:grid;gap:16px}
-.grid.cards{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+/* Éducation */
+ul {
+  list-style-type: none;
+}
+#education li {
+  margin-bottom: 15px;
+  border-left: 3px solid #000;
+  padding-left: 10px;
+}
+#education strong {
+  display: block;
+  font-weight: 600;
+}
+#education em {
+  font-size: 0.9rem;
+  color: #555;
+}
 
-/* Card & project */
-.card{border:1px solid #000;background:#fff;padding:14px;border-radius:8px}
-.project img{width:100%;height:150px;object-fit:cover;border:1px solid #000;border-radius:6px}
+/* Projets */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start; /* was space-between */
+}
+.project {
+  flex: 1 1 320px;
+  max-width: 48%;
+  border: 1px solid #000;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.project h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+  padding: 0 10px;
+}
+.project p {
+  padding: 0 10px 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+.project img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 1px solid #000;
+}
 
-/* Lists */
-ul{list-style:disc;padding-left:20px}
+/* Figures côte à côte */
+.project .figures {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+.project figure {
+  text-align: center;
+  flex: 1 1 45%;
+  max-width: 500px;
+}
+.project figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+.project figure figcaption {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 6px;
+}
 
-/* Buttons */
-.btn{display:inline-block;background:#000;color:#fff;border:1px solid #000;padding:10px 14px;border-radius:8px;text-decoration:none}
-.btn:hover{opacity:.9}
-.btn.primary{background:#000;color:#fff}
+/* Compétences */
+#competences ul li {
+  margin-bottom: 8px;
+}
+#competences strong {
+  color: #000;
+}
+
+/* Langues & Certifs */
+#infos ul li {
+  margin-bottom: 6px;
+}
+
+/* Contact */
+#contact a {
+  color: #000;
+  font-weight: 500;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
 
 /* Footer */
-footer{background:#000;color:#fff;text-align:center;padding:12px 0;margin-top:20px}
-
-/* Forms (search etc., if added later) */
-input[type="search"],input[type="text"],input[type="email"],button{border:1px solid #000;border-radius:8px;padding:8px 10px;background:#fff;color:#000}
-button{background:#000;color:#fff;border-color:#000;cursor:pointer}
-button:hover{opacity:.9}
-
-/* Accessibility helpers */
-:focus{outline:2px dashed #000;outline-offset:2px}
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 14px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
 
 /* Responsive */
-@media (max-width:900px){.container{padding:16px}}
+@media (max-width: 900px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navlinks {
+    margin-top: 8px;
+  }
+  .hero {
+    padding: 40px 0 20px;
+  }
+  .project {
+    .project { flex: 0 0 calc(50% - 10px)};
+  }
+  .project .figures {
+    flex-direction: column;
+  }
+}
