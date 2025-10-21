@@ -1,404 +1,184 @@
-<html><head>
-		<title>Zakaria Latreche</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<link rel="stylesheet" href="css/main.css">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" type="image/ico" href="images/GnGC6gpWwAAuV8w.jpg">
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zakaria Latreche — ePortfolio</title>
+  <meta name="description" content="ePortfolio simple de Zakaria Latreche — Éducation, Projets, Compétences, Contact." />
+  <!-- garder les fichiers séparés -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- En‑tête minimal -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <img src="images/GnGC6gpWwAAuV8w.jpg" alt="Portrait">
+          <div>
+            <strong>Zakaria Latreche</strong><br>
+            <span class="muted">M2 Mécatronique avancée — Polytech Annecy‑Chambéry</span>
+          </div>
+        </div>
+        <div class="navlinks">
+          <a href="#education">Éducation</a>
+          <a href="#projets">Projets</a>
+          <a href="#competences">Compétences</a>
+          <a href="#infos">Langues & Certifs</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+  <main class="container">
+    <!-- Hero très simple -->
+    <section class="hero" id="accueil">
+      <div>
+        <span class="tag">Robotique • Embarqué • RF • PCB</span>
+        <h1>ePortfolio</h1>
+        <p class="lead">Parcours et projets, en toute simplicité.</p>
+        <div class="cta">
+          <a class="btn primary" href="ZAKARIA%20LATRECHE.pdf" download>CV (PDF)</a>
+          <a class="btn" href="#projets">Voir les projets</a>
+        </div>
+      </div>
+    </section>
 
+    <!-- Éducation : liste simple -->
+    <section id="education">
+      <h2>Éducation</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Master 2 Mécatronique avancée</strong> (en anglais) — Polytech Annecy‑Chambéry <em>• Sept. 2024 – Maintenant</em><br><span class="muted">Électronique & robotique, traitement d’image, contrôle des systèmes.</span></li>
+          <li><strong>Master 1 Capteurs intelligents & Micro‑Nano Technologies</strong> — Université de Lorraine <em>• Sept. 2023 – Juin 2024</em><br><span class="muted">Microélectronique, PCB, instrumentation programmable, RF.</span></li>
+          <li><strong>Master Instrumentation</strong> — Univ. de Constantine 1 <em>• Sept. 2021 – Juin 2023</em><br><span class="muted">Électronique numérique & analogique, conditionnement capteurs.</span></li>
+          <li><strong>Licence Électronique</strong> — Univ. de Constantine 1 <em>• Sept. 2018 – Mai 2021</em><br><span class="muted">Circuits, amplificateurs, filtres passifs & actifs.</span></li>
+        </ul>
+      </div>
+    </section>
 
-				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h1>Zakaria Latreche</h1>
-							<h2>Master's Engineering Student.
-							</h2>
-							<ul class="icons">
-								<!-- <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li> -->
-								<li><a href="https://github.com/vuillaut/" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/vuillaumethomas/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:thomas.vuillaume@lapp.in2p3.fr" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="https://scholar.google.com/citations?user=2aDUzvoAAAAJ&hl=fr" class="icon style2 fa-book"><span class="label">GoogleScholar</span></a></li>
-						</ul></div>
-						<a class="icon">
-							<img src="images/GnGC6gpWwAAuV8w.jpg" alt="" width="280">
-						</a>
-					</section>
+    <!-- Projets : cartes simples (une image + 4–5 lignes) -->
+    <section id="projets">
+      <h2>Projets</h2>
+      <div class="grid cards">
+        <!-- 1 -->
+        <article class="card project">
+          <img src="images/minimouse.png" alt="RoboCup">
+          <h3>International RoboCup Challenge</h3>
+          <p class="muted">Polytech Annecy‑Chambéry — Sept. 2024 – Mai 2025</p>
+          <p>ROS (C++/Python), SLAM LiDAR, planification, vision pour détection de balles.</p>
+        </article>
+        <!-- 2 -->
+        <article class="card project">
+          <img src="images/UR3.png" alt="UR3 ↔ ROS">
+          <h3>Interfaçage du robot UR3 avec ROS</h3>
+          <p class="muted">Mars 2025 – Avril 2025</p>
+          <p>Pilotes officiels, réseau, <code>.urcap</code>, calibration <code>.yaml</code>, contrôle RViz/MoveIt.</p>
+        </article>
+        <!-- 3 -->
+        <article class="card project">
+          <img src="images/Softwear_LIA.png" alt="Microscope multiphotonique">
+          <h3>Traitement du signal — microscope multiphotonique</h3>
+          <p class="muted">Fév. 2025 – Mai 2025</p>
+          <p>Interface Python, SDK PicoScope, acquisition temps réel, calcul SNR.</p>
+        </article>
+        <!-- 4 -->
+        <article class="card project">
+          <img src="images/meander_antenna.png" alt="Détection vibrations">
+          <h3>Système autonome de détection de vibrations</h3>
+          <p class="muted">Sept. 2024 – Jan. 2025</p>
+          <p>ESP32‑C3, IMU, antenne méandre 50 Ω, PCB 4 couches, BOM sous Altium.</p>
+        </article>
+        <!-- 5 -->
+        <article class="card project">
+          <img src="images/Circular_antenna.png" alt="RF SAW">
+          <h3>Liaison RF pour capteur SAW (milieu rotatif)</h3>
+          <p class="muted">Nov. 2023 – Mai 2024</p>
+          <p>COMSOL (S11/S12), ciblage 2,45 GHz, layout & adaptation d’impédance Altium.</p>
+        </article>
+        <!-- 6 -->
+        <article class="card project">
+          <img src="images/minimouse.png" alt="Mini‑robot">
+          <h3>Minirobot à deux roues (Mini‑Mouse)</h3>
+          <p class="muted">Jan. 2024 – Mai 2024</p>
+          <p>STM32 (C), SPI/UART/I²C, PCB 2 couches intégrant capteurs/actionneurs.</p>
+        </article>
+        <!-- 7 -->
+        <article class="card project">
+          <img src="images/heart_sensor.png" alt="Capteur cardiaque">
+          <h3>Capteur cardiaque analogique</h3>
+          <p class="muted">Déc. 2023 – Jan. 2024</p>
+          <p>LED IR + photodiode, filtre actif, ampli (×100), comparateur, ~90 BPM.</p>
+        </article>
+        <!-- 8 -->
+        <article class="card project">
+          <img src="images/recycling.png" alt="Tri bouteilles">
+          <h3>Système de tri pour collecteur de bouteilles</h3>
+          <p class="muted">Fév. 2023 – Juin 2023</p>
+          <p>Arduino (C/C++), détection/tri/comptage/broyage, IHM, intégration méca‑élec.</p>
+        </article>
+        <!-- 9 -->
+        <article class="card project">
+          <img src="images/solar_tracker.png" alt="Suiveur solaire">
+          <h3>Suiveur de soleil à deux axes</h3>
+          <p class="muted">Fév. 2021 – Mai 2021</p>
+          <p>ESP32, capteurs LDR, servos; optimisation d’orientation du panneau.</p>
+        </article>
+      </div>
+    </section>
 
+    <!-- Compétences : liste simple -->
+    <section id="competences">
+      <h2>Compétences</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Programmation :</strong> C/C++, Python, Assembly, Bash, Git, Linux.</li>
+          <li><strong>Embarqué & FPGA :</strong> Xilinx Vivado, Vitis, Intel Quartus, SPI/I²C, UART.</li>
+          <li><strong>Équipements :</strong> Oscilloscope, analyseur logique, analyseur de spectre, générateur, alim de labo.</li>
+          <li><strong>Conception & Simulation :</strong> Altium, KiCad, COMSOL, ANSYS HFSS, LTspice, LabVIEW, Multisim.</li>
+          <li><strong>Gestion de projet :</strong> Probant, Notion, Excel.</li>
+        </ul>
+      </div>
+    </section>
 
-					<section class="wrapper style1 align-left">
+    <!-- Langues & Certifs : liste simple -->
+    <section id="infos">
+      <h2>Langues & Certifications</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Langues</h3>
+          <ul>
+            <li>Français (courant)</li>
+            <li>Anglais (courant)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Certifications</h3>
+          <ul>
+            <li>Data Analyst — DataComp, 2025.</li>
+            <li>HTML/CSS & JavaScript — 2023.</li>
+            <li>Altium Designer Academy — 2024.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-						<div class="inner">
-						<p align="justify">
-						<strong>
-						Hello, I'm Zakaria Latreche, a final-year engineering student at Polytech Annecy-Chambéry, pursuing a Master's degree in Advanced Mechatronics and Control Systems.
-						</strong>
-						<br>
-						<br>
-						My academic journey has helped me discover a deep passion for embedded systems, IoT, robotics, and control engineering. 
-      I’ve had the opportunity to contribute to cutting-edge research and development projects, working on embedded platforms, sensor technologies, 
-      and robotic systems. I thrive in multidisciplinary environments that blend electronics, software, and mechanical engineering.
-						<br>
-						<h2>Education</h2>
-						<!-- <p><em><a href="documents/202006_CV_Vuillaume.pdf"> Download a complete CV </a><a href="documents/202006_CV_Vuillaume_print.pdf"> (print version) </a></em> </p> -->
-							<ul>
-								<li><em> September 2024 - Now : </em> Engineering Diploma (Master’s level) in Advanced Mechatronics and Control Systems at <a href="https://lapp.in2p3.fr/"> Polytech Annecy-Chambery</a></li>
-								<li><em> September 2023- July 2024 : </em> Master’s Degree in Intelligent Sensors and Micro-Nano Technologies (CIM) <a href="https://lapp.in2p3.fr/"> University of Lorraine</a></li>
-								<li><em> September 2018 - July 2023 : </em> <tab align="right">Master degree Intrumentation and Embanded systems <a href="http://ipag.osug.fr/"> University of Constantine</a>, Algeria </tab></li>
-							</ul>
-						<p></p>
-						<!--	I am leading or actively participating in several projects to achieve these goals:
-							</p><ul>
-							<li> Robotics architecture and motion control using ROS (Robot Operating System)<a href="https://w3id.org/codemetasoft"></a></li>
-							<li> Control systems and machine vision <a href="https://everse.software/">Horizon Europe EVERSE project</a>, building a European Virtual Institute for Research Software </li>
-							<li> Cybersecurity fundamentals: system protection, CVEs, hash blocks <a href="https://gammalearn.pages.in2p3.fr/pages/">GammaLearn</a> project to develop deep learning methods for the analysis of CTA data </li>
-							<li> Data science: transforming raw data into actionable insights using Python (NumPy, Pandas, Matplotlib) <a href="https://idefics.fr/">IDEFICS</a> project that disseminates knowledge about data sciences and artificial intelligence and helps institutes and businesses take charge of these new technologies </li>
-							<li> Machine learning models for predictive analysis <a href="https://github.com/cta-observatory/ctapipe"> ctapipe </a> (contributor), <a href="https://github.com/cta-observatory/cta-lstchain"> lstchain</a> (main developer), <a href="https://github.com/vuillaut/ctaplot"> ctaplot</a> (main developer), <a href="https://github.com/IndexedConv/IndexedConv"> IndexedConv</a> (maintainer) </li>
-							<li> Database technologies: InfluxDB, MongoDB, and NoSQL systems</li>
-						    <li> Multidisciplinary approach integrating electrical, software, and mechanical engineering <a href="https://www.asterics2020.eu/"> ASTERICS</a> and <a href="https://projectescape.eu/"> ESCAPE</a> European H2020 projects to achieve the integration of the large astronomy and particle physics infrastructure into <a href="https://eosc-portal.eu/"> the European Open Science Cloud.</a></li>
-						</ul>-->
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email : <a href="mailto:zakaria.latreche@etu.univ-smb.fr">zakaria.latreche@etu.univ-smb.fr</a></p>
+      </div>
+    </section>
+  </main>
 
-						<!--<h2> Grants</h2>
+  <!-- Pied de page -->
+  <footer>
+    <div class="container">© <span id="y"></span> Zakaria Latreche — ePortfolio</div>
+  </footer>
 
-						<ul>
-							<li> 2025-2027 <a href="https://w3id.org/codemetasoft"> CODEMETASOFT</a> grant from European Commission's Horizon Europe Research and Innovation programme under grant agreement No. 101129751</li>
-							<li> 2024-2027 <a href="https://everse.software/">EVERSE</a> grant from the European Commission under the <a href="https://eosc.eu/calls-grants/"> INFRAEOSC call</a></li>
-							<li> 2024-2027: <a href="https://purl.org/gammalearn/directa"> DIRECTA</a> grant from the <a href="https://anr.fr/">ANR</a></li>
-							<li> 2017-2020: <a href="https://www.fondation-usmb.fr/projet/projet-deeplearning/"> Grant by the Fondation USMB</a> to support Mikaël Jacquemont's PhD </li>
-							<li> 2017-2020: Grant from <a href="https://www.asterics2020.eu/"> ASTERICS European H2020 project</a> for the <a href="https://purl.org/gammalearn/">GammaLearn project</a> in collaboration with <a href="https://orobix.com">Orobix</a> </li>
-							<li> 2012-2015: French national PhD grant - <em>Modélisation de l'émission des noyaux actifs de galaxie à l'ère Fermi.</em></li>
-						</ul>
-
-						<h2> Reviews </h2>
-
-						I have reviewed articles for many journals or conferences, including  <i>Engineering Applications of Artificial Intelligence, JHEAP, ADASS</i> as well as scientific projects for international grants.
-						<br>
-						PhD thesis:
-						<ul>
-							<li><i>A Machine Learning approach for astrophysical X-ray polarimetry with Gas Pixel Detectors</i>, by Nicoló Cibrario </li>
-						</ul>
-
-						<h2> Teaching </h2>
-
-						<ul>
-							<li> Data Science schools organization and coordination</li>
-							<ul>
-								<li>2017 - <a href="https://indico.in2p3.fr/event/14227/">https://indico.in2p3.fr/event/14227/</a></li>
-								<li>2018 - <a href="https://indico.in2p3.fr/event/16864/">https://indico.in2p3.fr/event/16864/</a></li>
-								<li>2019 - <a href="https://indico.in2p3.fr/event/18333/">https://indico.in2p3.fr/event/18333/</a></li>
-								<li>2021 - <a href="https://escape2020.github.io/school2021/">https://escape2020.github.io/school2021/</a></li>
-								<li>2022 - <a href="https://escape2020.github.io/school2022/">https://escape2020.github.io/school2022/</a></li>
-							</ul>
-							<li> INFO 801 - Introduction to data science</li>
-							<ul>
-								<li> 2019 - now - <a href="https://github.com/vuillaut/datascience_intro">https://github.com/vuillaut/datascience_intro</a> - <a href="https://github.com/vuillaut/info801">https://github.com/vuillaut/info801</a></li>
-							</ul>
-						</ul>-->
-
-
-
-						<!--<h2>Bibliography </h2>
-
-						<a itemprop="sameAs" content="https://orcid.org/0000-0002-5686-2078" href="https://orcid.org/0000-0002-5686-2078" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.shields.io/badge/ORCID-informational?style=flat&logo=ORCID&logoColor=white&color=A6CE39" alt="ORCID iD icon"></a>
-						<a itemprop="sameAs" content="" href="https://scholar.google.com/citations?user=2aDUzvoAAAAJ&hl=fr" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.shields.io/badge/GoogleScholar-informational?style=flat&logo=Google-Scholar&logoColor=white&color=4285F4" alt="Google Scholar Badge"></a>
-						<p>
-						My complete <b> list of publications is available on <a href="https://scholar.google.ca/citations?hl=fr&user=2aDUzvoAAAAJ"> Google Scholar </a> </b>
-					</p>
-
-
-						<div class="index align-left">
-
-						</div></div></section>-->
-
-
-				<!-- Three -->
-				<!--
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Tempus adipiscing</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight02.jpg" alt="" />
-						</div>
-					</section>
-				-->
-				<!-- Four -->
-				<!--
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Pharetra etiam nulla</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight03.jpg" alt="" />
-						</div>
-					</section>
-				-->
-
-				<!-- Six -->
-					<section class="wrapper style1 align-center" id="portfolio">
-						<div class="inner">
-							<h2>Portfolio</h2>
-							<p>Some of my academic and personal projects that I have developed or contributed to will be showcased here soon.<br>
-								<!-- <a href="https://scholar.google.ca/citations?view_op=list_works&hl=en&user=2aDUzvoAAAAJ&gmla=AJsN-F4-hCLmDCsee7hfTGuxbgUNIUET9bAl7cwujL1LZwEt3LusIDF-EZmiKncWIWQlnDIBjgKouLXY4SN8tvVSFzuIAaYQwmTaX-B8_ImtH7pAkdEZWndNtkghGlpR_Xo6SRXyTsWk"> Find a complete list of my scientific publications here. </a> -->
-							</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<h3>Modélisation et réalisation d’une liaison RF sans fil
-                pour capteur SAW en milieu rotatifs</h3>
-
-									<a align="center" href="https://in2p3.cnrs.fr/fr/cnrsinfo/lintelligence-artificielle-booste-lastronomie-des-hautes-energies" class="image fit thumb">
-										<img src="images/Circular_antenna.png" alt="Circular_antenna"> </a>
-										
-										
-										<p align="justify">This project was part of CIM master first year, where i devaloped and simulated a circular antenna that refelacts at the frequency of 2.45GHz, using HFSS and Altium designer<a href="https://in2p3.cnrs.fr/fr/cnrsinfo/lintelligence-artificielle-booste-lastronomie-des-hautes-energies">...</a></p>
-
-
-
-									<p></p>
-								</section>
-								<section>
-									<h3>2 wheel moving robot (mini-mouse)</h3>
-									<a align="center" href="crab_lst.html" class="image fit thumb">
-										<img src="images/minimouse.png" alt="mini-mouse"> </a>
-									<br>
-									<p align="justify">
-										<a href="crab_lst.html"></a> A project build to test my knowledge in PCB design using KiCad using an STM32 microcontroller, and C programming. The robot is able to move in a straight line, turn left and right, and avoid obstacles using ultrasonic sensors.
-									</p>
-								</section>
-								<section>
-									<h3>Home hosted server</h3>
-									<br>
-									<iframe src="http://100.85.250.33:3000/" width="100%" height="500px"></iframe>
-								</section>
-								<section>
-									<h3>Sensor integration for health monitoring of 3D-Printed structures (of new materials)</h3>
-									<a href="https://gammalearn.pages.in2p3.fr/pages/" class="icon">
-										<img src="images/Sensor_integration.png" alt="" width="270"> </a>
-									<p align="justify">
-									This project focused on developing a wireless, low-cost sensor integrated directly into 3D-printed structures for Structural Health Monitoring (SHM). Using Conductive PLA and Silver Nano Ink, the team designed and simulated humidity and strain sensors capable of detecting environmental changes through shifts in resonant frequency.
-									</p>
-								</section>
-								<section>
-									<h3>Software-Based Lock-In Amplifier</h3>
-									<a href="images/gammaboard.gif" class="image fit thumb"><img src="images/Softwear_LIA.png" title="GammaBoard" alt="GammaBoard"></a>
-									<p align="justify">
-									<a href="https://ctaplot.readthedocs.io/en/latest/README.html#gammaboard"> Software-Based LIA </a> is an interface based on ULIA (Universal Lock-In Amplifier), 
-									a library that was developed and tested by <a href="https://pubmed.ncbi.nlm.nih.gov/34470399/">Uhl et al</a>. The purpose of this software is to process data received from a non linear experimental setup using the ULIA library, enabling real-time visualization of the processed data.
-									</p>
-								</section>
-								<section>
-									<h3>High-Precision Motion Tracking Module</h3>
-									<a href="https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA" class="icon">
-										<img src="images/meander_antenna.png" alt="" width="270"> </a>
-									<br>
-									<p align="justify">
-									<br>
-									<a href="https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA"></a>This board is a 4-layer PCB designed for high-resolution motion tracking, navigation, and minimal vibration detection, based on ESP32-C3 (SoC) with an imbeded inverted-F antenna tuned at 50Ohm.
-									this baord was devaloped to be part of a robot to detect the minimume vibration and to give a feedback about the oriantation and position of the robot using an IMU from boash (BMI330).
-
-								</p>
-								</section>
-								<section>
-									<h3>Circular Meander Antenna</h3>
-									<a href="https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA" class="icon">
-										<img src="images/meander_antenna.png" alt="" width="270"> </a>
-									<br>
-									<p align="justify">
-									<br>
-									<a href="https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA"></a>Designed and simulated a compact meander-shaped antenna optimized to resonate at 730 MHz. Starting from a straight dipole model, the project explored rectangular and circular meander geometries to reduce antenna size while maintaining performance. 
-									Final simulations achieved a reflection coefficient (S11) of –12 dB and confirmed effective radiation in the XY plane.
-								</section>
-								<section>
-									<h3>Circular Meander Antenna</h3>
-									<a href="https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA" class="icon">
-										<img src="images/meander_antenna.png" alt="" width="270"> </a>
-									<br>
-									<p align="justify">
-									<br>
-									<a href="https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA"></a>Designed and simulated a compact meander-shaped antenna optimized to resonate at 730 MHz. Starting from a straight dipole model, the project explored rectangular and circular meander geometries to reduce antenna size while maintaining performance. 
-									Final simulations achieved a reflection coefficient (S11) of –12 dB and confirmed effective radiation in the XY plane.
-									
-								</section>
-								<section>
-									<h3>Circular Meander Antenna</h3>
-									<a href="https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA" class="icon">
-										<img src="images/meander_antenna.png" alt="" width="270"> </a>
-									<br>
-									<p align="justify">
-									<br>
-									<a href="https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA"></a>Designed and simulated a compact meander-shaped antenna optimized to resonate at 730 MHz. Starting from a straight dipole model, the project explored rectangular and circular meander geometries to reduce antenna size while maintaining performance. 
-									Final simulations achieved a reflection coefficient (S11) of –12 dB and confirmed effective radiation in the XY plane.
-								</section>
-								<section>
-									<h3>Circular Meander Antenna</h3>
-									<a href="https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA" class="icon">
-										<img src="images/meander_antenna.png" alt="" width="270"> </a>
-									<br>
-									<p align="justify">
-									<br>
-									<a href="https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA"></a>Designed and simulated a compact meander-shaped antenna optimized to resonate at 730 MHz. Starting from a straight dipole model, the project explored rectangular and circular meander geometries to reduce antenna size while maintaining performance. 
-									Final simulations achieved a reflection coefficient (S11) of –12 dB and confirmed effective radiation in the XY plane.
-									
-								</section>
-								<section>
-									<h3>Circular Meander Antenna</h3>
-									<a href="https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA" class="icon">
-										<img src="images/meander_antenna.png" alt="" width="270"> </a>
-									<br>
-									<p align="justify">
-									<br>
-									<a href="https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA"></a>Designed and simulated a compact meander-shaped antenna optimized to resonate at 730 MHz. Starting from a straight dipole model, the project explored rectangular and circular meander geometries to reduce antenna size while maintaining performance. 
-									Final simulations achieved a reflection coefficient (S11) of –12 dB and confirmed effective radiation in the XY plane.
-									
-								</section>
-								<section>
-									<h3>Circular Meander Antenna</h3>
-									<a href="https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA" class="icon">
-										<img src="images/meander_antenna.png" alt="" width="270"> </a>
-									<br>
-									<p align="justify">
-									<br>
-									<a href="https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA"></a>Designed and simulated a compact meander-shaped antenna optimized to resonate at 730 MHz. Starting from a straight dipole model, the project explored rectangular and circular meander geometries to reduce antenna size while maintaining performance. 
-									Final simulations achieved a reflection coefficient (S11) of –12 dB and confirmed effective radiation in the XY plane.
-									
-								</section>
-								<section>
-									<span class="icon style2 major fa-hashtag"></span>
-									<h3><a href="research-agn.html" class="button">More info on my research</a></h3>
-									<p></p>
-								</section>
-							</div>
-						</div>
-					</section>
-
-
-					<!-- Additional Elements -->
-						<section class="wrapper style1 align-center">
-							<div class="inner">
-								<h2>Out of the lab</h2>
-								<p></p>
-								<div class="index align-left">
-
-									<!-- Text -->
-										<section>
-											<header>
-												<h2>H2</h2>
-											</header>
-											<div class="content">
-
-												<p>
-
-												</p>
-
-											</div>
-										</section>
-										<section>
-											<header>
-												<h2>H2</h2>
-												<!-- <img src="https://s3-us-west-2.amazonaws.com/photoawardscom/uploads/137655/8-155027-18/full/7ada8941742890be1ebbfdf8bd173aa3.jpg" width="150"/> -->
-											</header>
-											<div class="content">
-
-											<!--	<p>
-												Mountaineering helps me escape and fill up the batteries.<br>
-												I practice regularly hiking, climbing, alpinism, paragliding and ski touring in the Alpes around my home.
-												</p>
--->
-											</div>
-										</section>
-						</div></div></section>
-
-
-
-
-				<!-- Seven -->
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Get in touch</h2>
-							<!--
-							<form method="post" action="mailto:thomas.vuillaume@lapp.in2p3.fr">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						-->
-
-						<br>
-						<br>
-						<div class="4u$ 12u$(small)">
-							<ul class="labeled-icons">
-
-									<h3 class="icon fa-home"><span class="label"></span></h3>
-								<br>
-								<br>
-
-									<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
-
-								<br>
-								<br>
-									<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-									<a href=""></a>
-
-							</ul>
-						</div>
-					</div>
-				</section>
-
-
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<!-- <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li> -->
-								<li><a href="" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="js/jquery.min.js"></script>
-			<script src="js/jquery.scrollex.min.js"></script>
-			<script src="js/jquery.scrolly.min.js"></script>
-			<script src="js/browser.min.js"></script>
-			<script src="js/breakpoints.min.js"></script>
-			<script src="js/util.js"></script>
-			<script src="js/main.js"></script>
-
-	
-
-</body></html>
+  <!-- JS minimal (peut être vide) -->
+  <script src="js/script.js"></script>
+</body>
+</html>

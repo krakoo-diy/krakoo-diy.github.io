@@ -1,0 +1,56 @@
+/* style.css — thème 100% noir & blanc, minimal */
+/* Reset & base */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:#fff;color:#000;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:#000;text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+
+/* Header & nav */
+header{background:#000;color:#fff}
+header .container{display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{width:50px;height:50px;border-radius:50%;object-fit:cover;border:1px solid #fff}
+.navlinks{display:flex;gap:12px}
+.navlinks a{color:#fff;text-decoration:none;border-bottom:1px solid transparent}
+.navlinks a:hover{border-bottom-color:#fff}
+
+/* Sections */
+section{padding:24px 0}
+h1{font-size:32px;margin:8px 0}
+h2{font-size:22px;margin:6px 0 12px}
+h3{font-size:18px;margin:8px 0}
+.lead{margin-top:6px}
+.tag{display:inline-block;border:1px solid #000;padding:4px 8px;border-radius:999px;font-size:12px}
+
+/* Simple layout */
+.hero{display:grid;grid-template-columns:1fr;gap:16px}
+.grid{display:grid;gap:16px}
+.grid.cards{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+
+/* Card & project */
+.card{border:1px solid #000;background:#fff;padding:14px;border-radius:8px}
+.project img{width:100%;height:150px;object-fit:cover;border:1px solid #000;border-radius:6px}
+
+/* Lists */
+ul{list-style:disc;padding-left:20px}
+
+/* Buttons */
+.btn{display:inline-block;background:#000;color:#fff;border:1px solid #000;padding:10px 14px;border-radius:8px;text-decoration:none}
+.btn:hover{opacity:.9}
+.btn.primary{background:#000;color:#fff}
+
+/* Footer */
+footer{background:#000;color:#fff;text-align:center;padding:12px 0;margin-top:20px}
+
+/* Forms (search etc., if added later) */
+input[type="search"],input[type="text"],input[type="email"],button{border:1px solid #000;border-radius:8px;padding:8px 10px;background:#fff;color:#000}
+button{background:#000;color:#fff;border-color:#000;cursor:pointer}
+button:hover{opacity:.9}
+
+/* Accessibility helpers */
+:focus{outline:2px dashed #000;outline-offset:2px}
+
+/* Responsive */
+@media (max-width:900px){.container{padding:16px}}
