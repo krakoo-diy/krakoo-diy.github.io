@@ -245,3 +245,44 @@ footer {
     flex-direction: column;
   }
 }
+
+
+/* Timeline pour la page Éducation */
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+.timeline li {
+  padding: 0 0 1.5rem 1.5rem;
+  position: relative;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #000; /* ou ta couleur d’accent */
+}
+
+.tag-inline {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.3);
+}
+
+.lead {
+  text-align: justify;   /* justify text */
+  margin-left: auto;     /* center the block */
+  margin-right: auto;    /* center the block */
+  max-width: 700px;      /* keeps a readable width */
+}

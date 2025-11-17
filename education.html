@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zakaria Latreche — Éducation</title>
+  <meta name="description" content="Parcours académique de Zakaria Latreche — Électronique, mécatronique, capteurs et RF." />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <!-- En-tête -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <!-- Option : clique sur le portrait pour revenir à l'accueil -->
+          <a href="index.html" class="brand-link">
+            <img src="images/GnGC6gpWwAAuV8w.jpg" alt="Portrait">
+          </a>
+          <div>
+            <strong>Zakaria Latreche</strong><br>
+            <span class="muted">M2 Mécatronique avancée — Polytech Annecy-Chambéry</span>
+          </div>
+        </div>
+        <div class="navlinks">
+          <!-- Ici on met Éducation en "page actuelle" -->
+          <a href="education.html" class="active">Éducation</a>
+          <a href="index.html#projets">Projets</a>
+          <a href="index.html#competences">Compétences</a>
+          <a href="index.html#infos">Langues & Certifs</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Petit hero spécifique à la page Éducation -->
+    <section class="hero" id="education-hero">
+      <div>
+        <span class="tag">Parcours académique</span>
+        <h1>Éducation</h1>
+        <p class="lead">
+          Formation en électronique, mécatronique avancée, capteurs intelligents et systèmes RF,
+          entre l’Algérie et la France.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section Éducation (contenu principal) -->
+    <section id="education">
+      <h2>Parcours universitaire</h2>
+      <div class="card">
+        <ul class="timeline">
+          <li>
+            <h3>Master 2 Mécatronique avancée <span class="tag-inline">en anglais</span></h3>
+            <p class="muted">
+              Polytech Annecy-Chambéry — <em>Sept. 2024 – Présent</em><br>
+              Électronique & robotique, traitement d’image, contrôle des systèmes.
+            </p>
+          </li>
+
+          <li>
+            <h3>Master 1 Capteurs intelligents & Micro-Nano Technologies</h3>
+            <p class="muted">
+              Université de Lorraine — <em>Sept. 2023 – Juin 2024</em><br>
+              Microélectronique, PCB, instrumentation programmable, RF.
+            </p>
+          </li>
+
+          <li>
+            <h3>Master Instrumentation</h3>
+            <p class="muted">
+              Université de Constantine 1 — <em>Sept. 2021 – Juin 2023</em><br>
+              Électronique numérique & analogique, conditionnement capteurs.
+            </p>
+          </li>
+
+          <li>
+            <h3>Licence Électronique</h3>
+            <p class="muted">
+              Université de Constantine 1 — <em>Sept. 2018 – Mai 2021</em><br>
+              Circuits, amplificateurs, filtres passifs & actifs.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Bouton pour revenir vers les projets -->
+    <section>
+      <div class="card" style="margin-top: 2rem; text-align: center;">
+        <p>Envie de voir comment ces formations se traduisent en projets concrets ?</p>
+        <a class="btn primary" href="index.html#projets">Voir les projets</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    © <span id="y"></span> Zakaria Latreche — ePortfolio
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // année auto si script.js est vide
+    (function(){ var y=document.getElementById('y'); if(y) y.textContent=new Date().getFullYear();})();
+  </script>
+</body>
+</html>
